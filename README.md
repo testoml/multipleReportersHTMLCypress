@@ -196,7 +196,7 @@ main();
 npm test
 ```
 Report are generated and display the correct information for each scenario.
-![01](https://github.com/testoml/reporterCypress/blob/main/img/FirtsAproachReportHTML.jpg)
+![01](https://github.com/testoml/reporterCypress/blob/main/img/01.png)
 
 #### 6. Adding screenshots of failed tests to the Mochawesome HTML report
 ##### Set configurations in the cypress.json file:
@@ -230,7 +230,7 @@ describe('My First Test', () => {
  npm test
 ```
 Reports are generated and the screenshot is displayed according to the failed test case.
-![02](https://github.com/testoml/reporterCypress/blob/main/img/finalApproachHTMLReport.jpg)
+![02](https://github.com/testoml/reporterCypress/blob/main/img/02.png)
 
 
 ### Additionals configurations

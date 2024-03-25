@@ -1,0 +1,16 @@
+{
+  "name": "reportercypress",
+  "version": "1.0.0",
+  "description": "As of my last update in January 2022, Cypress itself doesn't generate HTML reports out of the box. However, you can use third-party plugins to achieve this functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.7.1"
+  }
+}

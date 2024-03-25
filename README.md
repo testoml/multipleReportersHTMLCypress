@@ -1,4 +1,4 @@
-# Reporter Cypress - HTML Report
+# Multiple reporters - mochawesome
 
 ## Introduction 
 In automation, a reporter plays a crucial role in providing feedback and insights into the execution of test cases. Here are some key importance of reporters in automation:

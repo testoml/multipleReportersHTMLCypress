@@ -1,0 +1,27 @@
+pipeline {
+
+    agent any 
+
+   stages {
+  stage('Install npm') {
+  steps {
+   nodejs('NodeJS21') {
+    // some block
+    }
+  }
+}
+
+  stage('test') {
+    steps {
+     echo 'Testing ...'
+    }
+  }
+
+  stage('deploy') {
+    steps {
+     echo 'Deployed ...'
+    }
+  }
+
+}
+}

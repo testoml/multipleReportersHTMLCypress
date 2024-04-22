@@ -29,3 +29,4 @@ cypress/videos
 cypress/screenshots
 js/*.js
 cypress/reports
+cypress/downloads

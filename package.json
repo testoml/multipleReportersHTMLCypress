@@ -11,11 +11,12 @@
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports -- inline",
     "posttest": "npm run combine-reports && npm run generate-report",
     "cy:chrome": "npx cypress run --browser=chrome",
-    "test" : "npm run cy:chrome scripts || npm run posttest"
+    "test": "npm run cy:chrome scripts || npm run posttest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "-": "^0.0.1",
     "cypress": "^13.7.1",
     "cypress-multi-reporters": "^1.6.4",
     "mocha": "^10.3.0",

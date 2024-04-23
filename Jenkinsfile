@@ -3,7 +3,8 @@ pipeline {
     agent any 
 
     parameters{
-        string(name: 'cy', defaultValue: "cypress/e2e/**/**", description: "Enter the script path that you want to excecute")
+        string(name: 'SPEC', defaultValue: "cypress/e2e/**/**", description: "Enter the script path that you want to excecute")
+        choice(name: "BROWSER", choices:['chrome', 'edge'], description: "Select a browser to run")
     }
 
     options{
@@ -20,7 +21,7 @@ pipeline {
           stage('Testing') {
             steps{
                 bat "npm i"
-                bat "npm test"
+                bat "npm run cy:{BROWSER} scripts || npm run posttest"
             }
           }
           stage('Deploying') {

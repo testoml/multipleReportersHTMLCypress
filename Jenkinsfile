@@ -20,7 +20,7 @@ pipeline {
           stage('Testing') {
             steps{
                 bat "npm i"
-                bat "npm start"
+                bat "npm test"
             }
           }
           stage('Deploying') {

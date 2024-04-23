@@ -21,7 +21,7 @@ pipeline {
           stage('Testing') {
             steps{
                 bat "npm i"
-                bat "npm run cy:{BROWSER} scripts || npm run posttest"
+                bat "npm run cy:${BROWSER} scripts || npm run posttest"
             }
           }
           stage('Deploying') {

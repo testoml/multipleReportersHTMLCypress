@@ -31,7 +31,14 @@ pipeline {
   }
   post{
     always{
-        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports/mochareports', reportFiles: 'report.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+        publishHTML([allowMissing: false, 
+        alwaysLinkToLastBuild: true, 
+        keepAll: true, 
+        reportDir: 'cypress/reports/mochareports', 
+        reportFiles: 'report.html', 
+        reportName: 'HTML Report', 
+        reportTitles: '', 
+        useWrapperFileDirectly: true])
     }
   }
 }

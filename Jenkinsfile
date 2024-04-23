@@ -13,9 +13,10 @@ pipeline {
      stages {
      
           stage('Building') {
-                echo 'Building the application ...'
-         
-            }
+                  steps {
+                        echo 'Building project'    
+                      }
+                    }
           stage('Testing') {
             steps{
                 bat "npm i"
@@ -23,9 +24,10 @@ pipeline {
             }
           }
           stage('Deploying') {
-                echo 'Deploying the application...'
-         
-            }
+                  steps {
+                        echo 'Deploying project'    
+                      }
+                    }
   }
   post{
     always{
